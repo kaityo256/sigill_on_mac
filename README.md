@@ -60,7 +60,7 @@ zsh: illegal hardware instruction  ./a.out
 ```
 
 
-#＃ 詳細
+## 詳細
 
 * コードの中に全く使われない`std::ifstream`の宣言があるが、これを削除するとSIGILLは出ない(`b.out`)。
 * `main`関数から二回の関数呼び出しがあるが、最後に呼ばれる関数に`inline`指定をするとSIGILLがでない(`c.out`)。
